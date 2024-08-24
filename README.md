@@ -3,37 +3,35 @@
 A estrutura é organizada da seguinte forma:
 
 - :file_folder: `src/`
-  - :file_folder: `@types/`              - Tipos TypeScript customizados
-  - :file_folder: `assets/`              - Recursos como imagens e ícones
-  - :file_folder: `components/`          - Componentes reutilizáveis
-      - :file_folder: `Button.tsx`  - Implementação do codigo do componente
-      - :file_folder: `Input.tsx`  - Implementação do codigo do componente
-  - :file_folder: `contexts/`            - Contextos para gerenciamento de estado (autenticação)
-  - :file_folder: `dtos/`                - Estrutura dos dados que são trocados entre o front-end e o back-end
-  - :file_folder: `hooks/`               - Hooks personalizados
-  - :file_folder: `routes/`              - Configuração de rotas da aplicação
-  - :file_folder: `screens/`             - Telas do aplicativo
-      - :file_folder: `Home.tsx`
-  - :file_folder: `services/`            - Chamadas aos endpoints do back-end
-  - :file_folder: `storage/`             - Gerenciamento de armazenamento local
-  - :file_folder: `theme/`               - Padrões de cores e estilos de fonte
-  - :file_folder: `utils/`               - Funções utilitárias
-
+- :file_folder: `public`                
+- :file_folder: `node modules`          - Componentes do Node
+ 
 
 # Instalando dependencias
-Todas as dependencias estão dentro do arquivo install-all.sh
-Executar os seguintes comandos:
+Todas as dependencias estão no node_modules
+Verificar se tem instalado no seu computador node.js
+ - Comand/Windows cmd
+ - C/: node -v
 
-# Arquivo executável:
-	chmod +x install-all.sh
+Caso esteja usando windows é recomendado que use o NVM
+ -Faça download do nvm  https://github.com/coreybutler/nvm-windows/releases/download/1.1.12/nvm-setup.exe
+ -Siga as intruçôes feitas
+ -Abra o cmd novamente
+ - C/: nvm install 18.17.0
+ - C/: nvm use 18.17.0
+ - C/: node -v 
+ - C/: v18.17.0
 
-# Executar arquivo:
-	./install-all.sh
+Clone o repositório do Front:
+ - git clone https://tools.ages.pucrs.br/VIR/vir-frontend.git
+ - git checkout dev
 
+Dentro da pasta vir-fronted intalle os node_modules:
+ - cd vir-frontend
+ - cd vir
+ - npm i  // Instalar os modules na pasta vir
 
-# Iniciando a Aplicação
-	1. Abra o emulador a partir do Android Studio.
+Verifique se o Front esta rodando 
+ - npm start
 
-	2. No terminal da aplicação React Native, localizado na pasta raiz, execute o comando "npm start".
-
-	3. Se todos os passos forem concluídos sem erros, você verá os botões de configuração do emulador no terminal. Pressione a tecla "A" no próprio terminal para carregar a aplicação no Android Studio.
+Se abrir uma aba nova no seu navegador voçê esta pronto pra ir.
