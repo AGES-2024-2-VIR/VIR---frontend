@@ -1,0 +1,33 @@
+.header {
+    background-color: #ffdecf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-title {
+    color: #f4663b; 
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .back-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer; 
+  }
+  
