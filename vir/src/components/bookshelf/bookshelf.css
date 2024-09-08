@@ -1,5 +1,5 @@
 .header {
-    background-color: #FFDECF;
+    background-color: #ffdecf;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,29 +10,24 @@
   }
   
   .header-title {
-    color: #F4663B; 
+    color: #f4663b; 
     font-size: 26px;
     font-weight: bold;
     text-align: center;
     flex-grow: 1;
   }
-  
-  .back-button {
-    background-color: transparent;
-    border: none;
-    color: #F4663B;
-    font-size: 16px;
+
+  .back-icon {
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-  }
-  
-  .back-button:hover {
-    text-decoration: underline;
   }
   
   .profile-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;   
+    object-fit: cover;
+    cursor: pointer; 
   }
   

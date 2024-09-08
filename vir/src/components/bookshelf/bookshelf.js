@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './bookshelf.css';
 import accountCircle from './account_circle.png';
+import arrow from './arrow.png';
 import SideMenu from '../side_menu/side_menu';
 
 const Header = () => {
@@ -35,9 +36,12 @@ const Header = () => {
 
   return (
     <header className="header">
-      <button className="back-button" onClick={handleBackClick}>
-        Voltar
-      </button>
+      <img 
+        src={arrow} 
+        alt="Voltar" 
+        className="back-icon"
+        onClick={handleBackClick}
+      />
       <h1 className="header-title">MEUS LIVROS</h1>
       <img 
         src={accountCircle} 
