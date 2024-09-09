@@ -1,0 +1,45 @@
+.reading-header {
+    position: fixed; /* Or use sticky if appropriate */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Choose your background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 10; /* Ensure it stays on top */
+  }
+  
+  .chapter-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chapter-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .progress-bar {
+    width: 200px; /* Adjust width as needed */
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50; /* Choose your progress bar color */
+  }
+  
+  .quit-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
