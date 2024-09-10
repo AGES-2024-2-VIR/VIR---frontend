@@ -36,7 +36,7 @@ Verifique se o Front esta rodando
 
 Se abrir uma aba nova no seu navegador voçê esta pronto pra ir.
 
-No navegador caso você esteja programando para mobile, será necessário alterar a visualização dele
--primeiro abra o menu de configurações do navegador
--procure pela opção mais ferramentas e selecione ferramentas de desenvolvedor
--ao abrir esse menu procure pelo icone de tela do pc, e altere esse icone para iphone 14 pro max 
+No navegador caso você esteja programando para mobile, será necessário alterar a visualização dele:
+-   primeiro abra o menu de configurações do navegador
+-   procure pela opção mais ferramentas e selecione ferramentas de desenvolvedor
+-   ao abrir esse menu procure pelo icone de tela do pc, e altere esse icone para iphone 14 pro max 
