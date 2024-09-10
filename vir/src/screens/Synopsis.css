@@ -1,0 +1,53 @@
+.synopsis-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'ABeeZee', sans-serif;
+  }
+  
+  .title-section {
+    text-align: center;
+  }
+  
+  .image-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .book-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .progress-bar-section {
+    margin: 20px 0;
+  }
+  
+  .synopsis-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .continue-button-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .continue-button {
+    background-color: #F4663B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .continue-button:hover {
+    background-color: #FFDECF;
+    color: #F4663B;
+  }
+  
