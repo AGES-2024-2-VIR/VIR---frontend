@@ -1,0 +1,44 @@
+body
+{
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.navigation
+{
+
+    position: relative;
+    width: 400px;
+    height: 60px;
+    background-color: #FFDECF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navigation ul
+{
+
+    display: flex;
+    width: 350px;
+
+
+}
+
+.navigation ul li
+{
+
+    list-style: none;
+    position: relative;
+    width: 116px;
+    height: 60px;
+    z-index: 2;
+}
