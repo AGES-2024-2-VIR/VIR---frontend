@@ -7,13 +7,13 @@ const ReadingHeader = ({ chapterTitle, onQuit, progress }) => {
     <header className="reading-header">
       <div className="chapter-info">
         <span className="chapter-title">{chapterTitle}</span>
-        <div className="progress-bar">
+        <button className="quit-button" onClick={onQuit}>
+          X
+        </button>
+      </div>
+      <div className="progress-bar">
           <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
         </div>
-      </div>
-      <button className="quit-button" onClick={onQuit}>
-        X 
-      </button>
     </header>
   );
 };
@@ -26,7 +26,7 @@ ReadingHeader.propTypes = {
 
 export default ReadingHeader;
 
-TODO;
+// TODO;  
 /*  
 Não deu tempo de seguir, segue breve resumo do que foi feito e como utilizar 
 
