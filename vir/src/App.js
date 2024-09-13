@@ -1,29 +1,15 @@
 import './App.css';
-import React from 'react';
-import Header from './components/bookshelf/bookshelf';
-import BookReader from './components/reader/bookreader';
-import Navbar from './components/footer-component/footer';
-import WithLabelExample from './components/progress-bar/progress';
+import { Outlet } from 'react-router-dom';
 
 
 
 function App() {
   return (
     <div className="App">
-     
-      <main>
-         
-        <WithLabelExample />
-          <Navbar></Navbar>
-
-          
-      </main>
+      <h1>React router</h1>
+      
     </div>
-  );
-
-
-
-  
+  )
 }
 
 export default App;
