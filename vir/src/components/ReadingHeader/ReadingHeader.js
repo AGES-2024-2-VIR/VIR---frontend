@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './ReadingHeader.css';
 
-const ReadingHeader = ({ chapterTitle, onQuit, progress }) => {
+const ReadingHeader = ({ chapterTitle, onQuit, totalPages, currentPage}) => {
   return (
     <header className="reading-header">
       <div className="chapter-info">
@@ -12,7 +12,7 @@ const ReadingHeader = ({ chapterTitle, onQuit, progress }) => {
         </button>
       </div>
       <div className="progress-bar">
-          <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
+          <div className="progress-bar-fill" style={{ width: `${(currentPage/totalPages)*100}%` }}></div>
         </div>
     </header>
   );
