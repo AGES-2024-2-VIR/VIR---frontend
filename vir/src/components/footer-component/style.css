@@ -59,6 +59,10 @@
     margin-left: 50px;
 }
 
+.selected {
+    background-color: #ff8c00; 
+}
+
 .center-book
 {
     z-index: 2;
@@ -74,6 +78,24 @@
     border-radius: 100%;
     margin-top: 4px;
 
+}
+
+.selected svg path {
+    stroke: #ffe1d6;
+  }
+
+  
+  
+  .left-home svg, .right-search svg, .center-book svg {
+    stroke: #ccc; /* Cor padrão */
+  }
+
+  .center-book.selected {
+    background-color: #ff8c00; /* Altere o fundo para laranja quando selecionado */
+}
+
+.center-book.selected svg path {
+    stroke:#fff;
 }
 
 
