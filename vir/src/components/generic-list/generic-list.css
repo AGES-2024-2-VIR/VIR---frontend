@@ -1,0 +1,30 @@
+.list-item{
+    width: 351px;
+    height: 160px;
+    background-color: #FFDECF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 6px 12px;
+    margin: 21px auto;
+}
+
+.img{
+    border-radius: 8px;
+    max-height: 145px;
+    max-width: 112px;
+}
+.item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+}
+.item-title{
+    margin-left: 14px;
+    font-size: 16px;
+    font-family: 'ABeeZee', sans-serif;
+
+}

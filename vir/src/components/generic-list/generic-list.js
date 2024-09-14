@@ -1,67 +1,20 @@
 import React from 'react';
+import './generic-list.css'
 
-const ListItem = ({ title, description, image, buttons, showDescription }) => {
-    return (
-      <div style={styles.container}>
-        <img src={image} alt={title} style={styles.image} />
-        <div style={styles.content}>
-          <h3>{title}</h3>
-          {showDescription && description && <p>{description}</p>}
-          {buttons && buttons.length > 0 && (
-            <div style={styles.buttonContainer}>
-              {buttons.map((button, index) => (
-                <button key={index} style={styles.button} onClick={button.onClick}>
-                  {button.label}
-                </button>
-              ))}
-            </div>
-          )}
+const List = ({ title, image, children }) => {
+  return (
+    <div class="list-item">
+      <div class="item-img">
+        <img src={image} alt="" class="img"/>
+      </div>
+      <div class="item-info">
+        <div class="item-title">
+          <p>{title}</p>
         </div>
+        {children}  
       </div>
-    );
-  };
-  
-  const List = ({ items }) => {
-    return (
-      <div>
-        {items.map((item, index) => (
-          <ListItem
-            key={index}
-            title={item.title}
-            description={item.description}
-            image={item.image}
-            buttons={item.buttons}
-            showDescription={item.showDescription}
-          />
-        ))}
-      </div>
-    );
-  };
+    </div>
+  );
+};
 
-  const styles = {
-    container: {
-      border: '1px solid #ccc',
-      padding: '16px',
-      marginBottom: '16px',
-      display: 'flex',
-      alignItems: 'flex-start',
-    },
-    image: {
-      width: '100px',
-      height: '100px',
-      objectFit: 'cover',
-      marginRight: '16px',
-    },
-    content: {
-      flex: 1,
-    },
-    buttonContainer: {
-      marginTop: '8px',
-    },
-    button: {
-      marginRight: '8px',
-      padding: '8px 16px',
-    },
-  };
-
-  export default List;
+export default List;
