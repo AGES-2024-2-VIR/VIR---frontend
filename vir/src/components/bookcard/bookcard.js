@@ -32,20 +32,35 @@ const BookCard = () => {
 
   return (
     <div className="book-card">
+
       <img src={bookData.image} alt={bookData.title} className="book-image" />
+
       <div className="book-details">
-        <h3 className="book-title">{bookData.title}</h3>
-        <p className="book-author">{bookData.author.toUpperCase()}</p>
+
+        <div className='book-names'>
+          <h3 className="book-title">{bookData.title}</h3>
+          <p className="book-author">{bookData.author.toUpperCase()}</p>
+        </div>
+
         <div className="progress-container">
-          <div className="progress-bar" style={{ width: `${percentageRead}%` }}></div>
-          <span className="progress-percentage">{Math.round(percentageRead)}%</span>
+          <div className='book-progress-container'>
+            <div className="progress-bar">
+              <div className="progress-bar-done" style={{ width: `${percentageRead}%` }}></div>
+            </div>
+            <div className="book-progress-percentage">
+              <p className="progress-percentage">{Math.round(percentageRead)}%</p>
+            </div>
+          </div>
+          <div className="page-info">
+            <span className="page-info-read">{bookData.pagesRead} páginas lidas</span>
+            <span className='page-info-notread'>faltam {bookData.totalPages - bookData.pagesRead} páginas</span>
+          </div>
         </div>
-        <div className="page-info">
-          <span>{bookData.pagesRead} páginas lidas</span>
-          <span>faltam {bookData.totalPages - bookData.pagesRead} páginas</span>
+        <div className='button-container'>
+          <button className="continue-button">Continuar Leitura</button>
         </div>
-        <button className="continue-button">Continuar Leitura</button>
       </div>
+
     </div>
   );
 };

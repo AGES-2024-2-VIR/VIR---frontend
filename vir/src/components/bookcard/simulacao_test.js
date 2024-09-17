@@ -8,7 +8,7 @@ export const fetchSimulatedBookData = async () => {
         title: 'O Pequeno Príncipe',
         author: 'Antoine de Saint-Exupéry',
         totalPages: 94,
-        pagesRead: 46,
+        pagesRead: 40,
         image: defaultImage
       });
     });

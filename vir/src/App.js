@@ -1,29 +1,17 @@
-import './App.css';
 import React from 'react';
-import Header from './components/bookshelf/bookshelf';
-import BookReader from './components/reader/bookreader';
-import Navbar from './components/footer-component/footer';
-import WithLabelExample from './components/progress-bar/progress';
-
-
+import './App.css';
+import BookCard from './components/bookcard/bookcard';
+import BookShelf from './components/bookshelf/bookshelf';
 
 function App() {
   return (
     <div className="App">
-     
-      <main>
-         
-        <WithLabelExample />
-          <Navbar></Navbar>
-
-          
+      <main className="main-container">
+        <BookCard />
+        <BookCard />
       </main>
     </div>
   );
-
-
-
-  
 }
 
 export default App;

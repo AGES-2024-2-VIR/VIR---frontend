@@ -1,8 +1,12 @@
+body{
+  padding: 10px;
+}
+
 .book-card {
   display: flex;
   border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 8px 0 16px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 15px;
   background-color: #ffece7;
   max-width: 600px;
   margin: 20px auto;
@@ -11,17 +15,26 @@
 
 .book-image {
   width: 120px;
-  height: 180px;
+  height: 170px;
+  border: 1.5px solid black;
   object-fit: cover;
   border-radius: 10px;
   margin-right: 20px;
 }
 
 .book-details {
+  position: relative;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
+}
+
+.book-names{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
 }
 
 .book-title {
@@ -39,45 +52,75 @@
 }
 
 .progress-container {
-  position: relative;
-  background-color: #ffdecf;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
-  overflow: hidden;
-  height: 15px;
-  margin-bottom: 10px;
 }
 
 .progress-bar {
-  height: 100%;
-  background-color: #f4663b;
+  display: flex;
+  background-color:#f4663b4c;
   border-radius: 10px;
+  width: 80%;
+  height: 20px;
+}
+
+.progress-bar-done{
+  background-color:#f4663b;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.book-progress-container{
+  display: flex;
+  align-items: center;
+}
+
+.book-progress-percentage{
+  display: flex;
 }
 
 .progress-percentage {
-  position: absolute;
-  right: 10px;
-  top: -5px;
   font-size: 14px;
-  font-weight: bold;
+  padding-left: 10px;
+  font-weight: 400;
   color: black;
+  
+
 }
 
 .page-info {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 0.6rem;
   margin-bottom: 15px;
   color: black;
+  width: 80%;
 }
+
+.page-info-read{
+  color: #f4663b;
+  font-weight: 700;
+}
+
+
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
 
 .continue-button {
   background-color: transparent;
   color: #f4663b;
   border: 1px solid #f4663b;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 
