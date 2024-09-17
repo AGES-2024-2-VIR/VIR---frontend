@@ -1,17 +1,16 @@
-import React from 'react';
 import './App.css';
+import { Outlet } from 'react-router-dom';
 import BookCard from './components/bookcard/bookcard';
-import BookShelf from './components/bookshelf/bookshelf';
+
+
 
 function App() {
   return (
     <div className="App">
-      <main className="main-container">
-        <BookCard />
-        <BookCard />
-      </main>
+      <h1>React router</h1>
+      <BookCard/>
     </div>
-  );
+  )
 }
 
 export default App;
