@@ -47,14 +47,12 @@ const BookCard = () => {
             <div className="progress-bar">
               <div className="progress-bar-done" style={{ width: `${percentageRead}%` }}></div>
             </div>
-            <div className="book-progress-percentage">
-              <p className="progress-percentage">{Math.round(percentageRead)}%</p>
-            </div>
+            <p className="progress-percentage">{Math.round(percentageRead)}%</p>
           </div>
-          <div className="page-info">
-            <span className="page-info-read">{bookData.pagesRead} páginas lidas</span>
-            <span className='page-info-notread'>faltam {bookData.totalPages - bookData.pagesRead} páginas</span>
-          </div>
+        </div>
+        <div className="page-info">
+          <span className="page-info-read">{bookData.pagesRead} páginas lidas</span>
+          <span className='page-info-notread'>faltam {bookData.totalPages - bookData.pagesRead} páginas</span>
         </div>
         <div className='button-container'>
           <button className="continue-button">Continuar Leitura</button>
