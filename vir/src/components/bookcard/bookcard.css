@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+
 body{
   padding: 10px;
+  font-family: "ABeeZee";
 }
 
 .book-card {
   display: flex;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   padding: 15px;
   background-color: #ffece7;
